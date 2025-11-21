@@ -70,8 +70,7 @@ const SUBJECT_CONFIG = {
 
 const SYSTEM_PROMPT_TUTOR = `You are Nova, an expert AP tutor and study companion. 
 - Explain concepts clearly and concisely.
-- Use LaTeX formatting for ALL math equations, enclosing them in $...$ for inline and $$...$$ for block equations.
-- Example: "The quadratic formula is $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}$$".
+- Use MathJax formatting for ALL math equations.
 - Be encouraging and supportive.`;
 
 const SYSTEM_PROMPT_GRADER = `You are an expert AP Exam grader. 
@@ -128,7 +127,7 @@ const callGemini = async (prompt, systemPrompt) => {
 
   try {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=AIzaSyB9xg-rKXIrKFJSrj9Yxr4B-8_8-y_vyPE`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
