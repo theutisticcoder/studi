@@ -119,7 +119,7 @@ const LatexRenderer = ({ text }) => {
 
 // Gemini API Caller
 const callGemini = async (prompt, systemPrompt) => {
-  const apiKey = "AIzaSyB9xg-rKXIrKFJSrj9Yxr4B-8_8-y_vyPE"; // Injected by environment
+  const apiKey = ""; // Injected by environment
 
   const payload = {
     contents: [{ parts: [{ text: prompt }] }],
@@ -128,7 +128,7 @@ const callGemini = async (prompt, systemPrompt) => {
 
   try {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-preview-09-2025:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1118,3 +1118,4 @@ export default function NovaScholar() {
     </div>
   );
 }
+
