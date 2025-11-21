@@ -119,7 +119,7 @@ const LatexRenderer = ({ text }) => {
 
 // Gemini API Caller
 const callGemini = async (prompt, systemPrompt) => {
-  const apiKey = ""; // Injected by environment
+  const apiKey = "AIzaSyB9xg-rKXIrKFJSrj9Yxr4B-8_8-y_vyPE"; // Injected by environment
 
   const payload = {
     contents: [{ parts: [{ text: prompt }] }],
